@@ -26,3 +26,7 @@ function createTimeInEvent(object, dateStamp) {
   object.timeInEvents.push(info);
   return object;
 }
+
+function createTimeOutEvent(object, dateStamp) {
+  
+}

@@ -14,3 +14,6 @@ function createEmployeeRecords(arrays) {
   return arrays.map(createEmployeeRecord)
 }
 
+function createTimeInEvent(object, dateStamp) {
+  object
+}

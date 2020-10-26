@@ -58,3 +58,4 @@ function allWagesFor(object) {
   })
   return totalWages;
 }
+

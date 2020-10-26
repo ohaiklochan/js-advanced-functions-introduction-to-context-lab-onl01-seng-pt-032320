@@ -15,5 +15,5 @@ function createEmployeeRecords(arrays) {
 }
 
 function createTimeInEvent(object, dateStamp) {
-  object
+  object.timeInEvents.push
 }

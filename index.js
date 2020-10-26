@@ -54,7 +54,8 @@ function wagesEarnedOnDate(object, dateStamp) {
 
 function allWagesFor(object) {
   let totalWages = 0;
-  object.timeInEvents.forEach((timeIn) => {totalWages += wagesEarnedOnDate(object, timeIn.date);
+  object.timeInEvents.forEach((timeIn) => {
+    totalWages += wagesEarnedOnDate(object, timeIn.date);
   })
   return totalWages;
 }
@@ -66,5 +67,9 @@ function findEmployeeByFirstName(array, firstName) {
 }
 
 function calculatePayroll(array) {
-  
+  let totalWages = 0;
+  array.forEach((employee) => {
+    totalWages += allWagesFor(employee);
+  })
+  return totalWages;
 }

@@ -1,0 +1,1 @@
+function createEmployeeRecord(array) 

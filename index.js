@@ -52,3 +52,9 @@ function wagesEarnedOnDate(object, dateStamp) {
   return hoursWorkedOnDate(object, dateStamp) * object.payPerHour;
 }
 
+function allWagesFor(object) {
+  let totalWages = 0;
+  object.timeInEvents.forEach((timeIn) => {totalWages += wagesEarnedOnDate(object, timeIn.date);
+  })
+  return totalWages;
+}

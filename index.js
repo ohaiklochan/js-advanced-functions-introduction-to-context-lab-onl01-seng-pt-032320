@@ -15,5 +15,14 @@ function createEmployeeRecords(arrays) {
 }
 
 function createTimeInEvent(object, dateStamp) {
-  object.timeInEvents.push
+  const fullDate = dateStamp.split(" ");
+  const date = fullDate[0];
+  const time = fullDate[1];
+  const info = {
+    type : "TimeIn",
+    hour : parseInt(time),
+    date : date
+  };
+  record.timeInEvents.push(info);
+  return record;
 }

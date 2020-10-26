@@ -39,3 +39,7 @@ function createTimeOutEvent(object, dateStamp) {
   object.timeOutEvents.push(info);
   return object;
 }
+
+function hoursWorkedOnDate(object, dateStamp) {
+  
+}

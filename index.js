@@ -59,3 +59,8 @@ function allWagesFor(object) {
   return totalWages;
 }
 
+function findEmployeeByFirstName(array, firstName) {
+  return array.find((employee) => {
+    return employee.firstName === firstName;
+  })
+}

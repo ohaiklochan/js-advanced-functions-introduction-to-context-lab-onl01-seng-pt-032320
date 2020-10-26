@@ -51,3 +51,4 @@ function hoursWorkedOnDate(object, dateStamp) {
 function wagesEarnedOnDate(object, dateStamp) {
   return hoursWorkedOnDate(object, dateStamp) * object.payPerHour;
 }
+

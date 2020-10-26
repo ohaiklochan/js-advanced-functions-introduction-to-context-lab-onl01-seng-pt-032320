@@ -28,5 +28,14 @@ function createTimeInEvent(object, dateStamp) {
 }
 
 function createTimeOutEvent(object, dateStamp) {
-  
+  const fullDate = dateStamp.split(" ");
+  const date = fullDate[0];
+  const time = fullDate[1];
+  const info = {
+    type : "TimeOut",
+    hour : parseInt(time),
+    date : date
+  };
+  object.timeOutEvents.push(info);
+  return object;
 }

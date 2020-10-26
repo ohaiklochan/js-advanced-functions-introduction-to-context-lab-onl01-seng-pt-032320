@@ -24,5 +24,5 @@ function createTimeInEvent(object, dateStamp) {
     date : date
   };
   object.timeInEvents.push(info);
-  return record;
+  return object;
 }

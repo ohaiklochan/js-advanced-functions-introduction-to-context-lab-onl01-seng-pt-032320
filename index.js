@@ -47,3 +47,7 @@ function hoursWorkedOnDate(object, dateStamp) {
   hoursWorked = (dayOut.hour - dayIn.hour)/100;
   return hoursWorked;
 }
+
+function wagesEarnedOnDate(object, dateStamp) {
+  return hoursWorkedOnDate(object, dateStamp) * object.payPerHour;
+}

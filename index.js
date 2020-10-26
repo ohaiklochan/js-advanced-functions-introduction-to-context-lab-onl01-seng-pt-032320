@@ -23,6 +23,6 @@ function createTimeInEvent(object, dateStamp) {
     hour : parseInt(time),
     date : date
   };
-  record.timeInEvents.push(info);
+  object.timeInEvents.push(info);
   return record;
 }

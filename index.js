@@ -64,3 +64,7 @@ function findEmployeeByFirstName(array, firstName) {
     return employee.firstName === firstName;
   })
 }
+
+function calculatePayroll(array) {
+  
+}
